@@ -1,0 +1,8 @@
+.idea/Interactive-WEB-resource-Learning-PHP.iml
+.idea/blade.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/vcs.xml
+.idea/workspace.xml
+composer.lock
+vendor/
