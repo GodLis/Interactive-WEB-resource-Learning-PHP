@@ -13,6 +13,7 @@ session_start();*/
     <title>It`s my diploma</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.svg" rel="icon">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -34,7 +35,8 @@ session_start();*/
                     </button>
 
                     <div class = "row navbar-brand ">
-                        <div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"</div>
+                        <div class = "brand visible-xs-inline-block" ><img src="images/logoleft.png"></div>
+                        <!--<div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"</div>-->
                         <!--<div class = "visible-xs-inline-block" ><img src="images/logoleft.png"></div>-->
                     </div>
 
@@ -45,23 +47,22 @@ session_start();*/
                         <li><a href="index.php">JUMBOTRON</a></li>
 
                         <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">PHP. Основи
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">PHP. Tutorial
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="tutorialFirst.php">Знайомство з PHP</a></li>
+                                <li><a href="begin.php">Основи</a></li>
+                                <li><a href="">Змінні</a></li>
+                                <li><a href="">Оператори</a></li>
+                                <li><a href="">Умовні оператори</a></li>
+                                <li><a href="">Цикли</a></li>
+                                <li><a href="">Рядки</a></li>
+                                <li><a href="">Масиви</a></li>
+                                <li><a href="">Функції</a></li>
                                 <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
-                                <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
-                                <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
-                                <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
-                                <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
-                                <li><a href="">Стандарти PHP</a></li>
-                                <li><a href="">Тестування</a></li>
+                                <li><a href="">PHP + HTML</a></li>
+                                <li><a href="">ООП</a></li>
                             </ul>
                         </li>
 
@@ -74,7 +75,7 @@ session_start();*/
                             <ul class="dropdown-menu">
                                 <li><a href="psr0.php">PSR-0</a></li>
                                 <li><a href="psr1.php">PSR-1</a></li>
-                                <li><a href="">PSR-2</a></li>
+                                <li><a href="psr2.php">PSR-2</a></li>
                                 <li><a href="">PSR-4</a></li>
                                 <li><a href="">PEAR Coding Standards</a></li>
                                 <li><a href="">Zend Coding Standards</a></li>

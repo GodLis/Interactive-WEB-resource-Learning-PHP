@@ -1,3 +1,22 @@
 .mypadding{
     padding-top: 13%;
 }
+
+.mynavbutton{
+    display: inline-block;
+    align-content: center;
+    margin-left: 31%;
+    margin-right: 31%;
+}
+
+
+
+   .center-block {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .element {
+   .center-block();
+   }
