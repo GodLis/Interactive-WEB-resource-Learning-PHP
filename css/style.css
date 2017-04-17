@@ -2,6 +2,10 @@
     padding-top: 13%;
 }
 
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
 
    .center-block {
        display: block;
