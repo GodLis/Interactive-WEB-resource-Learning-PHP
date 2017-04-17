@@ -106,7 +106,7 @@ session_destroy();
             <div class="row-fluid">
 
                 <div class="span6 btn btn-link">
-                    <a href="">
+                    <a href="index.php">
                         <button type="button">
                             <div class="glyphicon glyphicon-arrow-left"></div> Попередня сторінка
                         </button>

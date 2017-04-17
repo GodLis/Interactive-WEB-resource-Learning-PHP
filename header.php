@@ -54,9 +54,9 @@ session_start();*/
                             <ul class="dropdown-menu">
                                 <li><a href="tutorialFirst.php">Знайомство з PHP</a></li>
                                 <li><a href="begin.php">Основи</a></li>
-                                <li><a href="">Змінні</a></li>
-                                <li><a href="">Оператори</a></li>
-                                <li><a href="">Умовні оператори</a></li>
+                                <li><a href="variables.php">Змінні</a></li>
+                                <li><a href="statements.php">Оператори</a></li>
+                                <li><a href="conditionalStatements.php">Умовні оператори</a></li>
                                 <li><a href="">Цикли</a></li>
                                 <li><a href="">Рядки</a></li>
                                 <li><a href="">Масиви</a></li>
