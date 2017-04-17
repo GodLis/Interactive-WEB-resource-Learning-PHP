@@ -101,17 +101,28 @@ session_destroy();
         В сесії можна зберігати різні дані, включаючи об'єкти.
     </div>
 
-    <div class="mynavbutton">
-        <a href="">
-            <button type="button" class="btn btn-link">
-                <span class="glyphicon glyphicon-arrow-left"></span> Попередня сторінка
-            </button>
-        </a>
-        <a href="begin.php">
-            <button type="button" class="btn btn-link">
-                Наступна сторінка <span class="glyphicon glyphicon-arrow-right"></span>
-            </button>
-        </a>
+    <div class="row-fluid" style="text-align: center">
+        <div class="span12">
+            <div class="row-fluid">
+
+                <div class="span6 btn btn-link">
+                    <a href="">
+                        <button type="button">
+                            <div class="glyphicon glyphicon-arrow-left"></div> Попередня сторінка
+                        </button>
+                    </a>
+                </div>
+
+                <div class="span6 btn btn-link">
+                    <a href="begin.php">
+                        <button type="button" >
+                            Наступна сторінка <div class="glyphicon glyphicon-arrow-right"></div>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 </div>

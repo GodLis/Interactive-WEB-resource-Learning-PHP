@@ -114,6 +114,49 @@ session_destroy();
             </code>
         </div>
 
+        <div class="h1" style="text-align: center">
+            Змінні в PHP
+        </div>
+        <div>
+            <p>
+                PHP створений не тільки для форматування статичного тексту. Для того, щоб обробляти різні дані були
+                придумані <b>змінні</b> . Змінна - контейнер c даними. Кожна змінна містить певне значення.
+            </p>
+            <p>
+                Синтаксис змінної складається з знака долара - $ і "вільного" ідентифікатора якому
+                присвоюється якесь значення. наприклад:
+            </p>
+            <code>
+                &lt;?php<br>
+                $name = "Виктор";<br>
+                ?>
+            </code>
+        </div>
+
+        <div class="row-fluid" style="text-align: center">
+            <div class="span12">
+                <div class="row-fluid">
+
+                    <div class="span6 btn btn-link">
+                        <a href="tutorialFirst.php">
+                            <button type="button">
+                                <div class="glyphicon glyphicon-arrow-left"></div> Попередня сторінка
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="span6 btn btn-link">
+                        <a href="begin.php">
+                            <button type="button" >
+                                Наступна сторінка <div class="glyphicon glyphicon-arrow-right"></div>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 
 <?php include_once("footer.php");
