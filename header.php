@@ -61,8 +61,8 @@ session_start();*/
                                 <li><a href="conditionalStatements.php">Умовні оператори</a></li>
                                 <li><a href="loops.php">Цикли</a></li>
                                 <li><a href="strings.php">Рядки</a></li>
-                                <li><a href="">Масиви</a></li>
-                                <li><a href="">Функції</a></li>
+                                <li><a href="arrays.php">Масиви</a></li>
+                                <li><a href="functions.php">Функції</a></li>
                                 <li><a href="">Стандарти PHP</a></li>
                                 <li><a href="">PHP + HTML</a></li>
                                 <li><a href="">ООП</a></li>
