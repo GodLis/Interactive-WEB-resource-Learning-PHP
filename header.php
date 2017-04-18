@@ -12,6 +12,8 @@ session_start();*/
 
     <title>It`s my diploma</title>
 
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/glyphicons-halflings-regular.svg" rel="icon">
     <link href="css/style.css" rel="stylesheet">
@@ -58,7 +60,7 @@ session_start();*/
                                 <li><a href="statements.php">Оператори</a></li>
                                 <li><a href="conditionalStatements.php">Умовні оператори</a></li>
                                 <li><a href="loops.php">Цикли</a></li>
-                                <li><a href="">Рядки</a></li>
+                                <li><a href="strings.php">Рядки</a></li>
                                 <li><a href="">Масиви</a></li>
                                 <li><a href="">Функції</a></li>
                                 <li><a href="">Стандарти PHP</a></li>
