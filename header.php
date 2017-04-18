@@ -64,7 +64,7 @@ session_start();*/
                                 <li><a href="arrays.php">Масиви</a></li>
                                 <li><a href="functions.php">Функції</a></li>
                                 <li><a href="phpAndHTML.php">PHP + HTML</a></li>
-                                <li><a href="">ООП</a></li>
+                                <li><a href="oop.php">ООП</a></li>
                             </ul>
                         </li>
 
