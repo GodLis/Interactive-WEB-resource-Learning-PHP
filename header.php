@@ -57,7 +57,7 @@ session_start();*/
                                 <li><a href="variables.php">Змінні</a></li>
                                 <li><a href="statements.php">Оператори</a></li>
                                 <li><a href="conditionalStatements.php">Умовні оператори</a></li>
-                                <li><a href="">Цикли</a></li>
+                                <li><a href="loops.php">Цикли</a></li>
                                 <li><a href="">Рядки</a></li>
                                 <li><a href="">Масиви</a></li>
                                 <li><a href="">Функції</a></li>
