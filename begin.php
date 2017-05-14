@@ -54,9 +54,9 @@ session_destroy();
             </p>
             <code>
                 &lt;?php<br>
-                echo <<<END<br>
-                <p>Для отображения большого <br> количества текста используют<br>
-                синтаксис heredoc</p>
+                echo <<<&lt;END<br>
+                &lt;p>Для отображения большого <br> количества текста используют<br>
+                синтаксис heredoc&lt;/p>
                 END;<br>
                 ?>
             </code>
@@ -122,7 +122,7 @@ session_destroy();
                     <div class="span6 btn btn-link">
                         <a href="tutorialFirst.php">
                             <button type="button">
-                                <div class="glyphicon glyphicon-arrow-left"></div> Попередня сторінка
+                                <span class="glyphicon glyphicon-arrow-left"></span> Попередня сторінка
                             </button>
                         </a>
                     </div>
@@ -130,7 +130,7 @@ session_destroy();
                     <div class="span6 btn btn-link">
                         <a href="variables.php">
                             <button type="button" >
-                                Наступна сторінка <div class="glyphicon glyphicon-arrow-right"></div>
+                                Наступна сторінка <span class="glyphicon glyphicon-arrow-right"></span>
                             </button>
                         </a>
                     </div>

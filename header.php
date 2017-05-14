@@ -39,7 +39,8 @@ session_start();
                     <div class = "row navbar-brand">
                         <div class = "brand visible-xs-inline-block" >
                             <img class src="images/logoleft.ico"></div>
-                        <!--<div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"</div>-->
+                        <!--<div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"
+                        </div>-->
                         <!--<div class = "visible-xs-inline-block" ><img src="images/logoleft.png"></div>-->
                     </div>
 

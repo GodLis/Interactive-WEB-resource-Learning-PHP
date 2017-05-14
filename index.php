@@ -2,6 +2,6 @@
     session_destroy();
 ?>
 
-    <div>jdfsbh </div>
+    <div></div>
 
 <?php include_once("footer.php");

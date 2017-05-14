@@ -1703,7 +1703,7 @@ session_destroy();
                         </a>
                     </li>
                     <li>
-                        <a href="Redis">
+                        <a href="http://redis.io/">
                             Redis
                         </a>
                     </li>
