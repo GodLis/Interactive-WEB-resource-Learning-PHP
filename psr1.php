@@ -216,7 +216,29 @@ session_destroy();
         регістрі, далі кожне слово починається з великої літери, а між словами немає роздільників).
     </div>
 
-    <br>
+    <div class="row-fluid" style="text-align: center">
+        <div class="span12">
+            <div class="row-fluid">
+
+                <div class="span6 btn btn-link">
+                    <a href="psr0.php">
+                        <button type="button">
+                            <div class="glyphicon glyphicon-arrow-left"></div> Попередня сторінка
+                        </button>
+                    </a>
+                </div>
+
+                <div class="span6 btn btn-link">
+                    <a href="psr2.php">
+                        <button type="button" >
+                            Наступна сторінка <div class="glyphicon glyphicon-arrow-right"></div>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php include_once("footer.php");

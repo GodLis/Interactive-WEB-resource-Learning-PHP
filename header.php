@@ -38,7 +38,7 @@ session_start();
 
                     <div class = "row navbar-brand">
                         <div class = "brand visible-xs-inline-block" >
-                            <img class src="images/logoleft.png"></div>
+                            <img class src="images/logoleft.ico"></div>
                         <!--<div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"</div>-->
                         <!--<div class = "visible-xs-inline-block" ><img src="images/logoleft.png"></div>-->
                     </div>
@@ -78,10 +78,10 @@ session_start();
                                 <li><a href="psr0.php">PSR-0</a></li>
                                 <li><a href="psr1.php">PSR-1</a></li>
                                 <li><a href="psr2.php">PSR-2</a></li>
-                                <li><a href="">PSR-4</a></li>
-                                <li><a href="">PEAR Coding Standards</a></li>
-                                <li><a href="">Zend Coding Standards</a></li>
-                                <li><a href="">Symfony Coding Standards</a></li>
+                                <li><a href="psr4.php">PSR-4</a></li>
+                                <li><a href="pearCodingSrandards.php">PEAR Coding Standards</a></li>
+                                <li><a href="zendCodingStandards.php">Zend Coding Standards</a></li>
+                                <li><a href="symfonyCodingStandards.php">Symfony Coding Standards</a></li>
                             </ul>
                         </li>
 
