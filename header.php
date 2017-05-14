@@ -1,6 +1,6 @@
 <?php
-/*include_once("includes/connection.php");
-session_start();*/
+include_once("includes/connection.php");
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
