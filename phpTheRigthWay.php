@@ -4,6 +4,15 @@ session_destroy();
 
     <div class="mypadding" style="text-align: justify">
 
+        <div style="text-align: right; color: red">
+            <p>
+                <b>
+                    Посилання на оригінал:
+                    <a href="http://www.phptherightway.com/">PHP The Right Way</a>.
+                </b>
+            </p>
+        </div>
+
         <div class="h1" style="text-align: center">
             Встановлення та налаштування
         </div>
@@ -1515,7 +1524,435 @@ session_destroy();
                 <div class="h3" style="text-align: center">
                     Apache та PHP
                 </div>
-                <div></div>
+                <div>
+                    <p>
+                        У PHP та Apache довга історія разом. Apache широко конфігурується та має багато доступних
+                        <a href="http://httpd.apache.org/docs/2.4/mod/">модулів</a> для розширення функціоналу.
+                        Це популярний вибір для загальних серверів та легкий для встановлення сервер для PHP фреймворків
+                        та open source додатків, таких як WordPress. На жаль, Apache використовує більше ресурсів ніж
+                        nginx за умовчанням і не може обробляти стільки ж запитів в той же час.
+                    </p>
+                    <p>
+                        Apache має кілька можливих конфігурацій для запуску PHP. Найбільш поширеною та легкою для
+                        встановлення є <a href="http://httpd.apache.org/docs/2.4/mod/prefork.html">prefork MPM</a>
+                        з mod_php5. Хоч це і не найефективніша конфігурація щодо використання оперативної пам’яті,
+                        вона найлегша для встановлення та використання. Це напевне найкращий вибір, якщо ви не хочете
+                        заглиблюватися в аспекти серверного адміністрування. Візьміть до уваги, що якщо ви
+                        використовуєте mod_php5 ви повинні використовувати prefork MPM.
+                    </p>
+                    <p>
+                        Альтернативно, якщо ви хочете вижати більше продуктивності з Apache, тоді ви повинні
+                        скористатися перевагами цієї ж FPM system як nginx і запустити
+                        <a href="http://httpd.apache.org/docs/2.4/mod/worker.html">worker MPM</a> або
+                        <a href="http://httpd.apache.org/docs/2.4/mod/event.html">event MPM</a> з mod_fastcgi або
+                        mod_fcgid. Ця конфігурація буде значно більш ефективною в плані використання оперативної
+                        пам’яті та значно швидшою, та вона потребує більше роботи для встановлення.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="http://httpd.apache.org/">
+                                Читати про Apache
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://httpd.apache.org/docs/2.4/mod/mpm_common.html">
+                                Читати про Multi-Processing Modules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html">
+                                Читати про mod_fastcgi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://httpd.apache.org/mod_fcgid/">
+                                Читати про mod_fcgid
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                Загальні сервери
+            </div>
+            <div>
+                <p>
+                    PHP завдячує своїй популярності загальним серверам. Важко знайти хостинг без встановленого PHP,
+                    та спочатку впевніться, що він останньої версії. Загальні сервери дозволяють вам та іншим
+                    розробникам розгортати вебсайти на одному компютері. Хороша сторота тут в тому, що хостинг стає
+                    дешевим. Мінус в тому, що ви не знаєте, яке чудовисько ваші сусіди по хосту збираються створити;
+                    перевантаження серверу чи відкриття дири безпеки - основні приводи для хвилювання. Якщо бюджет
+                    вашого проекту може дозволити виділений сервер, ви повинні скористатися цією можливістю.
+                </p>
+            </div>
+        </div>
+
+        <div class="h1" style="text-align: center">
+            Кешування
+        </div>
+        <div>
+            <p>
+                PHP досить швидкий сам по собі, та незручності можуть виникати коли ви здійснюєте віддалені з’єднання,
+                завантажуєте файли, тощо. На щастя існує багато інструментів, доступних для пришвидшення певних
+                частин вашого додатку, або зменшення числа разів, коли ці споживачі часу повинні запускатися.
+            </p>
+
+            <div class="h2" style="text-align: center">
+                Байт кеш
+            </div>
+            <div>
+                <p>
+                    Коли PHP файл виконується, всередині він спочатку компілюється в байт код (також відомий як opcode)
+                    і тільки тоді байт код виконується. Якщо PHP файл не модифікується, байткод завжди буде тим самим.
+                    Це означає, що компілювання стає розтратою ресурсів CPU.
+                </p>
+                <p>
+                    Ось де Байт кеш приходить на допомогу. Він запобігає надлишковій компіляції, зберігаючи байт код
+                    в оперативній пам’яті і повторно використовуючи його на наступних викликах. Налаштування байт
+                    кешу справа хвилинна та ваш додаток значно додасть в швидкості. Насправді немає жодної причини
+                    не використовувати його.
+                </p>
+                <p>
+                    Популярні байт кеші:
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://php.net/manual/en/book.apc.php">
+                            APC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://xcache.lighttpd.net/">
+                            XCache
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.zend.com/products/server/">
+                            Zend Optimizer+
+                        </a> (частина пакету Zend Server)
+                    </li>
+                    <li>
+                        <a href="http://www.iis.net/download/wincacheforphp">
+                            WinCache
+                        </a> (розширення для MS Windows Server)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                Кешування об’єктів
+            </div>
+            <div>
+                <p>
+                    Є часи коли може бути вигідно кешувати індивідуальні об’єкти у вашому коді, так як і з даними
+                    котрі важко отримати чи виклики до бази даних, де результат швидше за все буде незмінним.
+                    Ви можете використовувати софт для кешування об’єктів, щоб зберігати ці частини даних в
+                    оперативній пам’яті для екстримально швидкого доступу пізніше. Якщо ви збережете ці елементи до
+                    сховища даних після того як відтворите їх, тоді витягніть їх прямо з кешу для наведених запитів,
+                    ви можете отримати значне покращення у швидкодії разом з зменшення завантаження серверів баз даних.
+                </p>
+                <p>
+                    Багато з популярних рішень байт кешування дозволяють вам кешувати вибірковід дані також, отож існує
+                    навіть більше причин користуватися їх перевагами. APC, XCache та WinCache кожна надає API для
+                    збереження даних з вашого PHP коду в їх кеш пам’яті.
+                </p>
+                <p>
+                    Найбільш використовуваними системами кешування об’єктів є APC та memcached. APC це ідеальний
+                    вибір для кешування об’єктів, вона включає просте API для додавання ваших власних даних до свого
+                    кешу пам’яті і є дуже легкою для встановлення та використання. Одне справжнє обмеження APC це те,
+                    що вона прив’язана до сервера, на якому встановлена. Memcached з іншої сторони встановлена як
+                    окремий сервіс і може бути доступною через мережу, що означає, що ви можете зберігати об’єкти у
+                    гіпершвидкому сховищі даних в центральному розташуванні і багато різних систем можуть витягувати
+                    дані з нього.
+                </p>
+                <p>
+                    В мережевій конфігурації APC зазвичай випереджує memcached в плані швидкості доступу, та memcached
+                    здатна масштабуватися швидше і ширше. Якщо ви не очікуєте мати багато серверів, котрі будуть
+                    запускати ваш додаток, або вам не потрібний екстра функціонал, що пропонує memcached, тоді APC
+                    напевне ваш кращий вибір для кешування об’єктів.
+                </p>
+                <p>
+                    Приклад логіки, що використовується APC:
+                </p>
+                <code>
+                    &lt;?php<br>
+                    // check if there is data saved as 'expensive_data' in cache<br>
+                    $data = apc_fetch('expensive_data');<br>
+                    if (!$data)<br>
+                    {<br>
+                        // data not in cache, do expensive call and save for later use<br>
+                        $data = get_expensive_data();<br>
+                        apc_store('expensive_data', $data);<br>
+                    }<br>
+                    <br>
+                    print_r($data);
+                </code>
+                <p>
+                    Дізнатися більше про системи кешування об’єктів:
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://php.net/manual/en/ref.apc.php">
+                            APC Functions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://memcached.org/">
+                            Memcached
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Redis">
+                            Redis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://xcache.lighttpd.net/wiki/XcacheApi">
+                            XCache APIs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.php.net/manual/en/ref.wincache.php">
+                            WinCache Functions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="h1" style="text-align: center">
+            Ресурси
+        </div>
+        <div>
+            <div class="h2" style="text-align: center">
+                З джерела
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="http://php.net/">
+                            PHP Website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://php.net/docs.php">
+                            PHP Documentation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                Люди для фоловінгу в twitter
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="http://twitter.com/rasmus">
+                            Rasmus Lerdorf
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/fabpot">
+                            Fabien Potencier
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/derickr">
+                            Derick Rethans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/shiflett">
+                            Chris Shiflett
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/s_bergmann">
+                            Sebastian Bergmann
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/weierophinney">
+                            Matthew Weier O’Phinney
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/nikita_ppv">
+                            Nikita Popov
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                Менторство
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="http://phpmentoring.org/">
+                            phpmentoring.org
+                        </a> - Формальне, менторство в PHP спільноті.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                Провайдери PHP PaaS
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://pagodabox.com/">
+                            PagodaBox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://phpfog.com/">
+                            PHP Fog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.engineyard.com/products/orchestra/">
+                            Engine Yard Orchestra PHP Platform
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.redhat.com/products/cloud-computing/openshift/">
+                            Red Hat OpenShift Platform
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://docs.dotcloud.com/services/php/">
+                            dotCloud
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://aws.amazon.com/elasticbeanstalk/">
+                            AWS Elastic Beanstalk
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.cloudcontrol.com/">
+                            cloudControl
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.windowsazure.com/">
+                            Windows Azure
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="h1" style="text-align: center">
+            Фреймворки
+        </div>
+        <div>
+            <p>
+                Замість того щоб наново винаходити колесо, багато PHP девелоперів використовують фреймворки для того,
+                щоб будувати веб додатки. Фреймворки абстрагуються від багатьох низькорівневих проблем і надають
+                корисні і прості інтервейси для виконання типових завдань.
+            </p>
+            <p>
+                Вам не потрібно використовувати фреймворки для кожного проекту. Іноді простий PHP є правильним вибором,
+                та якщо вам потрібен фреймворк то існує три основні типи:
+            </p>
+            <ul>
+                <li>
+                    Мікро фреймворки
+                </li>
+                <li>
+                    Повні фреймворки
+                </li>
+                <li>
+                    Компонентні фреймворки
+                </li>
+            </ul>
+            <p>
+                Мікро фреймворки по суті є оболонками для маршруту запиту HTTP до зворотнього виклику, контроллер,
+                метод, тощо. і іноді постачаються з декількома додатковими бібліотеками для надання допомоги в
+                розробці оболонки бази даних, та ін. Вони помітно використовуються для побудови віддалених HTTP
+                сервісів.
+            </p>
+            <p>
+                Багато фреймворків додають значну кількість функцій в додаток до того, що вже доступне в мікро
+                фреймворку, вони відомі як Повні фреймворки. Вони часто приходять в комплекті з ORM, пакетами
+                аутентифікації, тощо
+            </p>
+            <p>
+                Компонентно орієнтованими фреймворками є колекції спеціалізованих та вузькоспеціалізованих бібліотек.
+                Нерівноправні компонентні фреймворки можуть бути використані разом, щоб зробити мікро або повний
+                фреймворк.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/codeguy/php-the-right-way/wiki/Frameworks">
+                        Популярні PHP фреймворки
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="h1" style="text-align: center">
+            Спільнота
+        </div>
+        <div>
+            <p>
+                PHP товариство настільки ж різноманітне, як і велике. Його учасники готові підтримати нових PHP
+                програмістів. Ви повинні розглянути можливість приєднання до групи ваших локальних користувачів PHP
+                (PUG) або участь у більших PHP сонференціях, щоб дізнатися більше про кращі практики, показані тут.
+                Ви також можете спілкуватися через IRC в групі #phpc на сервері irc.freenode.com і фоловити
+                <a href="https://twitter.com/phpc">@phpc</a> твітер акаунт. Знайомтеся там з новими девелоперами,
+                вчіть нові теми, і перш за все заводьте нових друзів.
+            </p>
+            <ul>
+                <li>
+                    <a href="http://www.php.net/cal.php">
+                        Читайте офіційний календар PHP подій
+                    </a>
+                </li>
+            </ul>
+
+            <div class="h2" style="text-align: center">
+                Групи користувачів PHP
+            </div>
+            <div>
+                <p>
+                    Якщо ви живете у великому місті, є великі шанси, що поблизу група користувачів PHP. Хоча є ще не
+                    офіційний список МОПСів, ви можете знайти найближчий МОПС за допомогою пошуку в
+                    <a href="https://www.google.com/search?q=php+user+group+near+me">Google</a> чи
+                    <a href="http://www.meetup.com/find/">Meetup.com</a>. Якщо ви живете в маленькому містечку,
+                    там може не бути локальної МОПС, якщо так - почніть одну.
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://wiki.php.net/usergroups">
+                            Читати про групи користувачів у PHP Wiki
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="h2" style="text-align: center">
+                PHP конференції
+            </div>
+            <div>
+                <p>
+                    PHP товариство також проводить великі регіональні та національні конференції у багатьох країнах по
+                    світу. Відомі учасники PHP спільноти зазвичай виступають на цих конференціях, отож велика
+                    можливіть вчитися безпосередньо в лідерів галузі.
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://php.net/conferences/index.php">
+                            Знайти PHP конференцію
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
