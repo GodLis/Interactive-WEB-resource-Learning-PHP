@@ -52,6 +52,8 @@ session_destroy();
 
         </div>
 
+        <a href="result.php">asd</a>
+
         <button type="submit" class="btn">Дізнатися результати!</button>
     </form>
 

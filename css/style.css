@@ -26,4 +26,21 @@ table, th, td {
     text-align: center;
 }
 
+/*Прижимаєм футер*/
+.content {
+    min-height: calc(100vh - 42px);
+}
 
+.answers{
+    text-align: center;
+    font-size: 18px;
+    padding: inherit;
+}
+
+.right_answer{
+    color: green;
+}
+
+.not_right_answer{
+    color: red;
+}

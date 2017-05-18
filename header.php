@@ -95,7 +95,6 @@ session_start();
                             </ul>
                         </li>
 
-                        <li><a href=""></a></li>
                     </ul>
                 </div>
 

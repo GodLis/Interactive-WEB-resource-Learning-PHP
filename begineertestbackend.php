@@ -9,12 +9,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         $sum_not_right_answer++;
     }
+
+    $quality = ($sum_right_answer/$sum_not_right_answer)*100;
 }
 include_once("header.php");
 session_destroy();
 ?>
 
-<div class="mypadding" style="text-align: justify">
+<div class="mypadding content" style="text-align: justify">
 
     <div style="text-align: center">
         <div>
@@ -24,11 +26,20 @@ session_destroy();
         </div>
         <div>
             Правильних відповідей:
-            <?php echo $sum_right_answer; ?>
+            <p class="right_answer">
+                <?php echo $sum_right_answer; ?>
+            </p>
         </div>
         <div>
             Неправильних відповідей:
-            <?php echo $sum_not_right_answer; ?>
+            <p class="not_right_answer">
+                <?php echo $sum_not_right_answer; ?>
+            </p>
+        </div>
+        <div>
+            <b>
+                Якість результату: <?php echo $sum_not_right_answer; ?> %
+            </b>
         </div>
     </div>
 
@@ -37,7 +48,7 @@ session_destroy();
             <div class="row-fluid">
 
                 <div class="span6 btn btn-link">
-                    <a href="">
+                    <a href="begineertest.php">
                         <button type="button">
                             <span class="glyphicon glyphicon-arrow-left"></span> Попередня сторінка
                         </button>
@@ -47,7 +58,7 @@ session_destroy();
                 <div class="span6 btn btn-link">
                     <a href="">
                         <button type="button" >
-                            Наступна сторінка <span class="glyphicon glyphicon-arrow-right"></span>
+                             Наступна сторінка<span class="glyphicon glyphicon-arrow-right"></span>
                         </button>
                     </a>
                 </div>
