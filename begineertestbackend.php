@@ -16,19 +16,21 @@ session_destroy();
 
 <div class="mypadding" style="text-align: justify">
 
-    <div>
-        Результати тестування:
+    <div style="text-align: center">
+        <div>
+            <b>
+                Результати тестування:
+            </b>
+        </div>
+        <div>
+            Правильних відповідей:
+            <?php echo $sum_right_answer; ?>
+        </div>
+        <div>
+            Неправильних відповідей:
+            <?php echo $sum_not_right_answer; ?>
+        </div>
     </div>
-
-    <div>
-        Правильних відповідей:
-        <?php echo $sum_right_answer; ?>
-    </div>
-    <div>
-        Неправильних відповідей:
-        <?php echo $sum_not_right_answer; ?>
-    </div>
-
 
     <div class="row-fluid" style="text-align: center">
         <div class="span12">
