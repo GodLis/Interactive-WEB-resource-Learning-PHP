@@ -260,7 +260,7 @@ session_destroy();
                 <div class="span6 btn btn-link">
                     <a href="psr2.php">
                         <button type="button" >
-                            Наступна сторінка <span> class="glyphicon glyphicon-arrow-right"></span>
+                            Наступна сторінка <span class="glyphicon glyphicon-arrow-right"></span>
                         </button>
                     </a>
                 </div>

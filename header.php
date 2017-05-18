@@ -86,7 +86,15 @@ session_start();
                             </ul>
                         </li>
 
-                        <li><a href="">Тестування</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Тестування
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="begineertest.php">Стартовий тест</a></li>
+                            </ul>
+                        </li>
+
                         <li><a href=""></a></li>
                     </ul>
                 </div>
