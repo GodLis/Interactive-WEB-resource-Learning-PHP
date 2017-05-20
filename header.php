@@ -91,7 +91,7 @@ session_start();
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="begineertest.php">Стартовий тест</a></li>
+                                <li><a href="begineertest.php">Вступне тестування</a></li>
                             </ul>
                         </li>
 

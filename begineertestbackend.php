@@ -10,15 +10,87 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sum_not_right_answer++;
     }
 
-    $quality = ($sum_right_answer/$sum_not_right_answer)*100;
+    if ($_POST["q2"] == '$b = array{2, 4, 6}') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q3"] == 'Hello World') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q4"] == '1') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q5"] == 'Прибрати ++') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q6"] == 'nl2br()') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q7"] == 'char') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q8"] == 'session_register()') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q9"] == 'Value of a = 10') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q10"] == '4') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q11"] == 'Hello World!') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q12"] == 'strrpos') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q13"] == 'fappend') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    $quality = ($sum_right_answer/10)*100;
 }
 include_once("header.php");
 session_destroy();
 ?>
 
-<div class="mypadding content" style="text-align: justify">
+<div class="mypadding content">
 
-    <div style="text-align: center">
+    <div class="answers">
         <div>
             <b>
                 Результати тестування:
