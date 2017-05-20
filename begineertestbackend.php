@@ -82,7 +82,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sum_not_right_answer++;
     }
 
-    $quality = ($sum_right_answer/10)*100;
+    if ($_POST["q14"] == '1,1,2') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q15"] == '53') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q16"] == 'Екранувати всі спеціальні символи перед тим як вставляти дані в SQL-запит') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q17"] == 'function ModifyReport(&$Rptfile){}') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q18"] == 'Код продовжить виконання всередині наступного case, що може призвести до помилок') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q19"] == '1') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    if ($_POST["q20"] == 'Друкує вміст масиву') {
+        $sum_right_answer++;
+    } else {
+        $sum_not_right_answer++;
+    }
+
+    $quality = ($sum_right_answer/20)*100;
 }
 include_once("header.php");
 session_destroy();

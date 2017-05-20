@@ -383,6 +383,218 @@ session_destroy();
                         fappend()
                     </label>
                 </li>
+                <li>
+                    <label>
+                        Які значення будуть в масиві $a після виконання?
+                    </label>
+                    <blockquote>
+                        &lt;?php<br>
+                        $a = array(1, 2, 3);<br>
+                        foreach ( $a as $key => &$value ) {<br>
+                            $value = 1;<br>
+                        }<br>
+                        $value = 2;<br>
+                        ?>
+                    </blockquote>
+
+                    <label class="radio">
+                        <input type="radio" name="q14" value="2,1,1">
+                        2,1,1
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q14" value='1,1,1'>
+                        1,1,1
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q14" value='1,1,2'>
+                        1,1,2
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q14" value='2,2,2'>
+                        2,2,2
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Що буде виведено після виконання наступного фрагменту коду?
+                    </label>
+                    <blockquote>
+                        $operation = "+";<br>
+                        $a = 66;<br>
+                        $b =13;<br>
+                        <br>
+                        switch ($operation) {<br>
+                            default : $c = 0;<br>
+                            case "+" : $c = $a + $b;<br>
+                            case "-" : $c = $a - $b;<br>
+                        }<br>
+                        <br>
+                        echo $c;
+                    </blockquote>
+
+                    <label class="radio">
+                        <input type="radio" name="q15" value='Виникне помилка виконання сценарію'>
+                        Виникне помилка виконання сценарію
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q15" value='53'>
+                        53
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q15" value='0'>
+                        0
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q15" value='null'>
+                        null
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q15" value="79">
+                        79
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Чому із цього потрібно слідувати при роботі з базою даних для передбачення SQL-ін'єкцій?
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="q16"
+                               value='Екранувати всі спеціальні символи перед тим як вставляти дані в SQL-запит'>
+                        Екранувати всі спеціальні символи перед тим як вставляти дані в SQL-запит
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q16"
+                               value='Для збереження всих строкових даних в базі використовувати тільки колонки типу
+                               VARCHAR'>
+                        Для збереження всих строкових даних в базі використовувати тільки колонки типу VARCHAR
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q16" value='Пропускати всі дані із форми через функцію urlencode()'>
+                        Пропускати всі дані із форми через функцію urlencode()
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q16"
+                               value='Використовувати хеш SHA1 на всі дані, перш ніж додавати їх в базу'>
+                        Використовувати хеш SHA1 на всі дані, перш ніж додавати їх в базу
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q16"
+                               value="Оброблювати функцією addclashes() всі дані, що отримані з бази">
+                        Оброблювати функцією addclashes() всі дані, що отримані з бази
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Якщо Ви хочите передати значення функції за посиланням, то вірним рішенням буде:
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="q17" value='function ModifyReport($Rptfile){}'>
+                        function ModifyReport($Rptfile){}
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q17" value='function ModifyReport(&$Rptfile){}'>
+                        function ModifyReport(&$Rptfile){}
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q17" value='function ModifyReport(&Rptfile){}'>
+                        function ModifyReport(&Rptfile){}
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q17" value='function ModifyReport($&Rptfile){}'>
+                        function ModifyReport($&Rptfile){}
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q17" value="function ModifyReport(ByRef $Rptfile){}">
+                        function ModifyReport(ByRef $Rptfile){}
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Що буде якщо упустити "break" при написанні варіанта (case) при написанні конструкції switch?
+                    </label>
+
+                    <label class="radio">
+                        <input type="radio" name="q18" value='Парсер PHP видасть помилку'>
+                        Парсер PHP видасть помилку
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q18"
+                               value='Код продовжить виконання всередині наступного case, що може призвести до помилок'>
+                        Код продовжить виконання всередині наступного case, що може призвести до помилок
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q18" value='Браузер користувача видасть помилку'>
+                        Браузер користувача видасть помилку
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q18"
+                               value='Парсер, дійшовши до наступного case, автоматично вийде із switch-а'>
+                        Парсер, дійшовши до наступного case, автоматично вийде із switch-а
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q18"
+                               value="Код продовжить своє виконання всередині наступного case і видасть помилку">
+                        Код продовжить своє виконання всередині наступного case і видасть помилку
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Що буде надруковано в результаті виконанянаступного коду:
+                    </label>
+                    <blockquote>
+                        echo {int} '1 марта 2009 г';
+                    </blockquote>
+
+                    <label class="radio">
+                        <input type="radio" name="q19" value='1'>
+                        1
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q19" value='12009'>
+                        12009
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q19" value='Виникне помилка виконання'>
+                        Виникне помилка виконання
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q19" value='0'>
+                        0
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Що робить даний кусок коду:
+                    </label>
+                    <blockquote>
+                        for ($j = 0; $j < count ($MyArray); $j++) {<br>
+                            echo ($MyArray[$j]);<br>
+                        }
+                    </blockquote>
+
+                    <label class="radio">
+                        <input type="radio" name="q20" value='Друкує вміст масиву'>
+                        Друкує вміст масиву
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q20" value='Нічого не змінює і не друкує'>
+                        Нічого не змінює і не друкує
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q20" value='Додає значення в масив'>
+                        Додає значення в масив
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q20" value='Друкує перший елемент масиву'>
+                        Друкує перший елемент масиву
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="q20" value='Змінює всі значення в масиві'>
+                        Змінює всі значення в масиві
+                    </label>
+                </li>
             </ol>
 
         </div>
