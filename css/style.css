@@ -26,6 +26,10 @@ table, th, td {
     text-align: center;
 }
 
+.navbar {
+    text-transform: uppercase;
+}
+
 /*Прижимаєм футер*/
 .content {
     min-height: calc(100vh - 42px);

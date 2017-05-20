@@ -2,6 +2,7 @@
 
 $sum_right_answer = 0;
 $sum_not_right_answer = 0;
+$quality = 0;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_POST["q1"] == "0") {
@@ -152,7 +153,7 @@ session_destroy();
         </div>
         <div>
             <b>
-                Якість результату: <?php echo $sum_not_right_answer; ?> %
+                Якість результату: <?php echo $quality; ?> %
             </b>
         </div>
     </div>
