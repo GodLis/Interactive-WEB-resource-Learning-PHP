@@ -21,7 +21,6 @@ session_start();
     <div class="jumbotron"  style="background-color: #6C7A89">
             <div class="container">
                 <div class="row myUpper">
-                    <img src="/images/logoright.png" alt="" class="pull-right">
                     <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8">
                         <h1 style="color: #BDC3C7">
                             Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"
