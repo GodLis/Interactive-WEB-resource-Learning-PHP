@@ -4,7 +4,7 @@
     }
 }
 
-@media only screen and (max-width: 820px){
+@media only screen and (max-width: 768px){
     .mypadding{
         padding-top: 20%;
     }
@@ -47,4 +47,15 @@ table, th, td {
 
 .not_right_answer{
     color: red;
+}
+
+.myUpper {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.logobird{
+    max-width: inherit;
+    max-height: inherit;
+    align-content: flex-end;
 }

@@ -35,17 +35,15 @@ session_start();
 
                     <div class = "row navbar-brand">
                         <div class = "brand visible-xs-inline-block" >
-                            <img class src="images/logoleft.ico"></div>
-                        <!--<div class="hidden-xs">Інтерактивний Web-ресурс з курсу "Web-програмування. Напрям PHP"
-                        </div>-->
-                        <!--<div class = "visible-xs-inline-block" ><img src="images/logoleft.png"></div>-->
+                            <img class src="images/logoleft.ico">
+                        </div>
                     </div>
 
                 </div>
 
                 <div class="navbar-collapse collapse nav-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.php">carousel</a></li>
+                        <li><a href="index.php">jumbotron</a></li>
 
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">php. tutorial

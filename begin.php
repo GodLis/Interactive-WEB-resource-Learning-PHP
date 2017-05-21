@@ -44,7 +44,7 @@ session_destroy();
             </p>
             <blockquote>
                 Петров Іван<br>
-                Родился<br>
+                Народився<br>
                 ...
             </blockquote>
         </div>
