@@ -86,7 +86,12 @@ session_start();
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="begineertest.php">Вступне тестування</a></li>
+                                <li>
+                                    <a href="begineertest.php">Вступне тестування</a>
+                                </li>
+                                <li>
+                                    <a href="tutorialTestPart1.php">Тестування по пройденному матеріалу. Частина №1</a>
+                                </li>
                             </ul>
                         </li>
 
