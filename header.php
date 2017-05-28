@@ -77,7 +77,7 @@ session_start();
                                 <li><a href="psr4.php">psr-4</a></li>
                                 <li><a href="pearCodingSrandards.php">pear coding standards</a></li>
                                 <li><a href="zendCodingStandards.php">zend coding standards</a></li>
-                                <li><a href="symfonyCodingStandards.php">symfony soding standards</a></li>
+                                <li><a href="symfonyCodingStandards.php">symfony coding standards</a></li>
                             </ul>
                         </li>
 
@@ -90,7 +90,13 @@ session_start();
                                     <a href="begineertest.php">Вступне тестування</a>
                                 </li>
                                 <li>
-                                    <a href="tutorialTestPart1.php">Тестування по пройденному матеріалу. Частина №1</a>
+                                    <a href="tutorialTestPart1.php">Tutorial Testing. Part 1</a>
+                                </li>
+                                <li>
+                                    <a href="tutorialTestPart2.php">Tutorial Testing. Part 2</a>
+                                </li>
+                                <li>
+                                    <a href="tutorialTestPart3.php">Tutorial Testing. Part 3</a>
                                 </li>
                             </ul>
                         </li>

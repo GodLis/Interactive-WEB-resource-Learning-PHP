@@ -440,6 +440,17 @@ session_destroy();
             Hello world<br>
             Hello world ! ! !
         </blockquote>
+
+        <div style="text-align: center">
+            <p class="text-info">
+                Ви можете пройти коротке тестування по пройденному матеріалу за наступним посиланням:
+            </p>
+            <p>
+                <a href="tutorialTestPart1.php">
+                    Перейди за мною :)
+                </a>
+            </p>
+        </div>
     </div>
 
     <div class="row-fluid" style="text-align: center">

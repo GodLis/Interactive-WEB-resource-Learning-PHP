@@ -5,7 +5,7 @@ session_destroy();
     <div class="mypadding" style="text-align: justify">
 
         <div class="h1" style="text-align: center">
-            Тестування по пройденному матеріалу. Частина №1
+            Тестування по пройденному матеріалу. Частина №2
         </div>
         <div class="h3 text-info" style="text-align: center">
             <b>
@@ -21,66 +21,49 @@ session_destroy();
                 <ol>
                     <li>
                         <label>
-                            PHP - це...
+                             Що означає наступна конструкція: <code>===</code>?
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q1" value="каскадні таблиці стилів">
-                            каскадні таблиці стилів
+                            <input type="radio" name="q1" value="трикратне присвоєння">
+                            трикратне присвоєння
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="гіпертекстовий препроцесор">
-                            гіпертекстовий препроцесор
+                            <input type="radio" name="q1" value="переприсвоєння значення">
+                            переприсвоєння значення
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="мова розмітки гіпертексту">
-                            мова розмітки гіпертексту
+                            <input type="radio" name="q1" value="рівність">
+                            рівність
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="низькорівнева мова програмування">
-                            низькорівнева мова програмування
+                            <input type="radio" name="q1" value="ідентичність">
+                            ідентичність
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="препроцесорна мова, що виконується на стороні клієнта">
-                            препроцесорна мова, що виконується на стороні клієнта
+                            <input type="radio" name="q1" value="така конструкція не допустима для використання в PHP">
+                            така конструкція не допустима для використання в PHP
                         </label>
                     </li>
                     <li>
                         <label>
-                            Виконання коду обробником PHP відбувається...
+                            Який оператор виконується в PHP за умови перерахування можливих варіантів значень?
                         </label>
 
                         <label class="radio">
                             <input type="radio" name="q2"
-                                   value='після відкриваючого тегу &lt;?php і продовжує виконання до того моменту,
-                            поки не зустріне закриваючий тег'>
-                            після відкриваючого тегу &lt;?php і продовжує виконання до того моменту,
-                            поки не зустріне закриваючий тег
+                                   value='switch'>
+                            switch
                         </label>
                         <label class="radio">
                             <input type="radio"
-                                   name="q2" value='після закриваючого тегу &lt;?php і продовжує виконання
-                                   до того моменту, поки не зустріне закриваючий тег'>
-                            після закриваючого тегу &lt;?php і продовжує виконання до того моменту,
-                            поки не зустріне закриваючий тег
+                                   name="q2" value='if'>
+                            if
                         </label>
                         <label class="radio">
                             <input type="radio" name="q2"
-                                   value='після відкриваючого тегу ?> і продовжує виконання до того моменту,
-                            поки не зустріне закриваючий тег'>
-                            після відкриваючого тегу ?> і продовжує виконання до того моменту,
-                            поки не зустріне закриваючий тег
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q2"
-                               value="після закриваючого тегу ?> і продовжує виконання до того моменту,
-                                поки не зустріне закриваючий тег">
-                                після закриваючого тегу ?> і продовжує виконання до того моменту,
-                                поки не зустріне закриваючий тег
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q2" value="будь-де при зустрічі виконуваних конструкцій PHP">
-                            будь-де при зустрічі виконуваних конструкцій PHP
+                                   value='elseif'>
+                            elseif
                         </label>
                     </li>
                     <li>
@@ -272,12 +255,12 @@ session_destroy();
                     </li>
                 </ol>
 
-    </div>
+            </div>
 
-    <div style="text-align: center">
-        <button type="submit" class="btn btn-success">Дізнатися результати!</button>
-    </div>
-    </form>
+            <div style="text-align: center">
+                <button type="submit" class="btn btn-success">Дізнатися результати!</button>
+            </div>
+        </form>
 
 
     <div class="row-fluid" style="text-align: center">
