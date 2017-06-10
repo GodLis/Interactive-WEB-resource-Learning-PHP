@@ -5,7 +5,10 @@ session_destroy();
     <div class="mypadding" style="text-align: justify">
 
         <div class="h1" style="text-align: center">
-            PSR-2 - Рекомендації по оформленню коду
+            Посилання на оригінальну документацію: <a
+                    href="http://symfony.com/doc/current/contributing/code/standards.html">
+                SYMFONY Coding Standarts
+            </a>
         </div>
 
 
