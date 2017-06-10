@@ -68,73 +68,78 @@ session_destroy();
                     </li>
                     <li>
                         <label>
-                            Чи підтримує спільнота PHP-розробників стратегію OpenSource?
+                            Для чого потрібна функція <code>ord</code>?
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q3" value="Так">
-                            Так
+                            <input type="radio" name="q3" value="Формує рядок з елементів масиву">
+                            Формує рядок з елементів масиву
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q3" value='Ні'>
-                            Ні
+                            <input type="radio" name="q3" value='Повертає довжину рядка'>
+                            Повертає довжину рядка
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q3" value='Частково'>
-                            Частково
+                            <input type="radio" name="q3" value='Повертає ASCII-код символу'>
+                            Повертає ASCII-код символу
                         </label>
                     </li>
                     <li>
                         <label>
-                            Синтаксис змінної складається з ...
+                            Функція strpos ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку амперсанта - & і "вільного" ідентифікатора'>
-                            знаку амперсанта - & і "вільного" ідентифікатора
+                            <input type="radio" name="q4" value='використовується для отримання частини рядка'>
+                            використовується для отримання частини рядка
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку долара - $ і якогось числа'>
-                            знаку долара - $ і якогось числа
+                            <input type="radio" name="q4" value='повертає позицію першого входження підрядка в рядок'>
+                            повертає позицію першого входження підрядка в рядок
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку амперсанта - & і букви'>
-                            знаку амперсанта - & і букви
+                            <input type="radio" name="q4" value='використовується для отримання всього рядка'>
+                            використовується для отримання всього рядка
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку долара - $ і "вільного" ідентифікатора'>
-                            знаку долара - $ і "вільного" ідентифікатора
+                            <input type="radio" name="q4"
+                                   value='повертає позицію останнього входження підрядка в рядок'>
+                            повертає позицію останнього входження підрядка в рядок
                         </label>
                     </li>
                     <li>
                         <label>
-                            Яку функцію використовують для опису констант?
+                            Правильне присвоєння значення елементу масиву - це ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q5" value="const">
-                            const
+                            <input type="radio" name="q5" value="1">
+                            <code>
+                                $arr = "html";
+                            </code>
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='define'>
-                            define
+                            <input type="radio" name="q5" value='2'>
+                            <code>
+                                $arr += "html";
+                            </code>
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='const(int)'>
-                            const(int)
+                            <input type="radio" name="q5" value='3'>
+                            <code>
+                                $arr[$arr] = "html";
+                            </code>
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='static'>
-                            static
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q5" value='variable'>
-                            variable
+                            <input type="radio" name="q5" value='4'>
+                            <code>
+                                $arr["html"] = "html";
+                            </code>
                         </label>
                     </li>
                     <li>
                         <label>
-                            Який тип даних не дозволений в PHP?
+                            Яка функція використовується для створення масиву?
                         </label>
 
                         <label class="radio">
@@ -142,115 +147,95 @@ session_destroy();
                             array
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='object'>
-                            object
+                            <input type="radio" name="q6" value='arr'>
+                            arr
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='string'>
-                            string
+                            <input type="radio" name="q6" value='$arr'>
+                            $arr
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='char'>
-                            char
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q6" value='NULL'>
-                            NULL
+                            <input type="radio" name="q6" value='create_array'>
+                            create_array
                         </label>
                     </li>
                     <li>
                         <label>
-                            Який тип даних не дозволений в PHP?
+                            Щоб вивести на екран масив можна використовувати функцію ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q7" value="string">
-                            string
+                            <input type="radio" name="q7" value="switch">
+                            switch
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q7" value='integer'>
-                            integer
+                            <input type="radio" name="q7" value='for'>
+                            for
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q7" value='float'>
-                            float
+                            <input type="radio" name="q7" value='foreach'>
+                            foreach
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q7" value='char'>
-                            char
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q7" value='array'>
-                            array
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q7" value='object'>
-                            object
+                            <input type="radio" name="q7" value='output'>
+                            output
                         </label>
                     </li>
                     <li>
                         <label>
-                            Виберіть омбіновані математичні оператори:
+                            Функція для видалення одного елементу масиву:
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q8" value="+=, -=">
-                            +=, -=
+                            <input type="radio" name="q8" value="drop_element">
+                            drop_element
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q8" value='=+, =-'>
-                            =+, =-
+                            <input type="radio" name="q8" value='unset'>
+                            unset
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q8" value='>=, =-'>
-                            >=, =-
+                            <input type="radio" name="q8" value='delete'>
+                            delete
                         </label>
                     </li>
                     <li>
                         <label>
-                            Що робить постінкремент?
+                            Функція <code>key</code> :
                         </label>
 
                         <label class="radio">
                             <input type="radio" name="q9"
-                                   value="Повертає поточне значення, після чого збільшує його на одиницю">
-                            Повертає поточне значення, після чого збільшує його на одиницю
+                                   value="Повертає індекс поточного елемента масиву">
+                            Повертає індекс поточного елемента масиву
                         </label>
                         <label class="radio">
                             <input type="radio" name="q9"
-                                   value='Зменшує значення на одиницю, потім повертає значення'>
-                            Зменшує значення на одиницю, потім повертає значення
+                                   value='Встановлює внутрішній покажчик на перший елемент масиву'>
+                            Встановлює внутрішній покажчик на перший елемент масиву
                         </label>
                         <label class="radio">
                             <input type="radio" name="q9"
-                                   value='Повертає поточне значення, після чого зменшує його на одиницю'>
-                            Повертає поточне значення, після чого зменшує його на одиницю
+                                   value='Шукає заданий елемент в масиві і повертає відповідний йому індекс'>
+                            Шукає заданий елемент в масиві і повертає відповідний йому індекс
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q9" value='Збільшує значення на одиницю, потім повертає значення'>
-                            Збільшує значення на одиницю, потім повертає значення
+                            <input type="radio" name="q9" value='Шукає елемнет масиву за заданим ключем'>
+                            Шукає елемнет масиву за заданим ключем
                         </label>
                     </li>
                     <li>
                         <label>
-                            Скільки основних математичних операторів в PHP?
+                            Що робить функція <code>explode</code>?
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q10" value="4">
-                            4
+                            <input type="radio" name="q10" value="формує рядок з масиву">
+                            формує рядок з масиву
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q10" value='8'>
-                            8
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q10" value='2'>
-                            2
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q10" value='24'>
-                            24
+                            <input type="radio" name="q10" value='формує масив з рядка'>
+                            формує масив з рядка
                         </label>
                     </li>
                 </ol>

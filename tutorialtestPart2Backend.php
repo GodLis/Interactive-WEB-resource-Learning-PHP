@@ -17,49 +17,49 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q3"] == 'Так') {
+    if ($_POST["q3"] == 'Повертає ASCII-код символу') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q4"] == 'знаку долара - $ і "вільного" ідентифікатора') {
+    if ($_POST["q4"] == 'повертає позицію першого входження підрядка в рядок') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q5"] == 'define') {
+    if ($_POST["q5"] == '4') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q6"] == 'char') {
+    if ($_POST["q6"] == 'array') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q7"] == 'char') {
+    if ($_POST["q7"] == 'foreach') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q8"] == '+=, -=') {
+    if ($_POST["q8"] == 'unset') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q9"] == 'Повертає поточне значення, після чого збільшує його на одиницю') {
+    if ($_POST["q9"] == 'Повертає індекс поточного елемента масиву') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q10"] == '4') {
+    if ($_POST["q10"] == 'формує масив з рядка') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
