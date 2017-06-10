@@ -2,14 +2,15 @@
 session_destroy();
 ?>
 
-    <div class="mypadding" style="text-align: justify">
+    <div class="mypadding content" style="text-align: justify">
 
-        <div class="h1" style="text-align: center">
-            Посилання на оригінальну документацію: <a href="https://framework.zend.com/learn">
-                ZEND Coding Standarts
-            </a>
+        <div class="answers">
+            <div class="h1" style="text-align: center">
+                Посилання на оригінальну документацію: <a href="https://framework.zend.com/learn">
+                    ZEND Coding Standarts
+                </a>
+            </div>
         </div>
-
 
         <div class="row-fluid" style="text-align: center">
             <div class="span12">
