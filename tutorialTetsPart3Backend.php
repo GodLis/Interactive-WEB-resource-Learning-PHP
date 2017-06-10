@@ -5,61 +5,61 @@ $sum_not_right_answer = 0;
 $quality = 0;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if ($_POST["q1"] == "рівність") {
+    if ($_POST["q1"] == "набір операторів, який ідентифікується певним ідентифікатором (ім'ям)") {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q2"] == 'switch') {
+    if ($_POST["q2"] == 'щоб функція повертала якесь значення') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q3"] == 'Повертає ASCII-код символу') {
+    if ($_POST["q3"] == 'Так') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q4"] == 'повертає позицію першого входження підрядка в рядок') {
+    if ($_POST["q4"] == '!empty') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q5"] == '4') {
+    if ($_POST["q5"] == 'виконує валідацію електронної почти') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q6"] == 'array') {
+    if ($_POST["q6"] == 'екземпляр класу') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q7"] == 'foreach') {
+    if ($_POST["q7"] == 'Наслідування, абстракція, інкапсулція, поліморфізм') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q8"] == 'unset') {
+    if ($_POST["q8"] == 'області видимості') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q9"] == 'Повертає індекс поточного елемента масиву') {
+    if ($_POST["q9"] == 'звертатися до них без створення екземпляра класу') {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;
     }
 
-    if ($_POST["q10"] == 'формує масив з рядка') {
+    if ($_POST["q10"] == "об'єкт намагаються викликати як функцію") {
         $sum_right_answer++;
     } else {
         $sum_not_right_answer++;

@@ -21,54 +21,50 @@ session_destroy();
                 <ol>
                     <li>
                         <label>
-                            Що означає наступна конструкція: <code>===</code>?
+                            Функція - це ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q1" value="трикратне присвоєння">
-                            трикратне присвоєння
+                            <input type="radio" name="q1" value="набір операторів, який ідентифікується певним класом">
+                            набір операторів, який ідентифікується певним класом
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="переприсвоєння значення">
-                            переприсвоєння значення
+                            <input type="radio" name="q1" value="набір операторів, які мають щось спільне">
+                            набір операторів, які мають щось спільне
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="рівність">
-                            рівність
+                            <input type="radio" name="q1"
+                                   value="набір операторів, який ідентифікується певним ідентифікатором (ім'ям)">
+                            набір операторів, який ідентифікується певним ідентифікатором (ім'ям)
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q1" value="ідентичність">
-                            ідентичність
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q1" value="така конструкція не допустима для використання в PHP">
-                            така конструкція не допустима для використання в PHP
+                            <input type="radio" name="q1" value="математичний вираз">
+                            математичний вираз
                         </label>
                     </li>
                     <li>
                         <label>
-                            Який оператор виконується в PHP за умови перерахування можливих варіантів значень?
+                            Для чого потрібен оператор <code>return</code>?
                         </label>
 
                         <label class="radio">
                             <input type="radio" name="q2"
-                                   value='switch'>
-                            switch
+                                   value='щоб функція повертала якесь значення'>
+                            щоб функція повертала якесь значення
                         </label>
                         <label class="radio">
                             <input type="radio"
-                                   name="q2" value='if'>
-                            if
+                                   name="q2" value='щоб функція повертала саму себе'>
+                            щоб функція повертала саму себе
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q2"
-                                   value='elseif'>
-                            elseif
+                            <input type="radio" name="q2" value='даний оператор являється показчиком на функцію'>
+                            даний оператор являється показчиком на функцію
                         </label>
                     </li>
                     <li>
                         <label>
-                            Чи підтримує спільнота PHP-розробників стратегію OpenSource?
+                            Чи є обов'язковою властивість <code>action</code> для тегу <code>&lt;form></code>?
                         </label>
 
                         <label class="radio">
@@ -80,177 +76,166 @@ session_destroy();
                             Ні
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q3" value='Частково'>
-                            Частково
+                            <input type="radio" name="q3" value='Не завжди'>
+                            Не завжди
                         </label>
                     </li>
                     <li>
                         <label>
-                            Синтаксис змінної складається з ...
+                            Яка конструкція в PHP перевіряє чи змінна не "пуста"?
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку амперсанта - & і "вільного" ідентифікатора'>
-                            знаку амперсанта - & і "вільного" ідентифікатора
+                            <input type="radio" name="q4" value='not_null'>
+                            not_null
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку долара - $ і якогось числа'>
-                            знаку долара - $ і якогось числа
+                            <input type="radio" name="q4" value='!null'>
+                            !null
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку амперсанта - & і букви'>
-                            знаку амперсанта - & і букви
+                            <input type="radio" name="q4" value='empty'>
+                            empty
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q4" value='знаку долара - $ і "вільного" ідентифікатора'>
-                            знаку долара - $ і "вільного" ідентифікатора
+                            <input type="radio" name="q4" value='!empty'>
+                            !empty
                         </label>
                     </li>
                     <li>
                         <label>
-                            Яку функцію використовують для опису констант?
+                            Що робить наступна конструкція?
+                        </label>
+                        <code>
+                            $email_validate = filter_var($email, FILTER_VALIDATE_EMAIL);
+                        </code>
+
+                        <label class="radio">
+                            <input type="radio" name="q5" value="виконує фільтрування електронної почти">
+                            виконує фільтрування електронної почти
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="q5" value='виконує валідацію електронної почти'>
+                            виконує валідацію електронної почти
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="q5"
+                                   value='видаляє всі лишні пробіли в рядку з адресом елктронної почти'>
+                            видаляє всі лишні пробіли в рядку з адресом елктронної почти
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            Об'єкт - це ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q5" value="const">
-                            const
+                            <input type="radio" name="q6" value="сутність класу">
+                            сутність класу
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='define'>
-                            define
+                            <input type="radio" name="q6" value='екземпляр класу'>
+                            екземпляр класу
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='const(int)'>
-                            const(int)
+                            <input type="radio" name="q6" value='описувана конструкція в класі'>
+                            описувана конструкція в класі
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q5" value='static'>
-                            static
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q5" value='variable'>
-                            variable
+                            <input type="radio" name="q6"
+                                   value='функціональна можливість розширення властивостей класу'>
+                            функціональна можливість розширення властивостей класу
                         </label>
                     </li>
                     <li>
                         <label>
-                            Який тип даних не дозволений в PHP?
+                            Основні принципи ООП - це ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q6" value="array">
-                            array
+                            <input type="radio" name="q7" value="Інкапсуляція, наслідування, абстракція">
+                            Інкапсуляція, наслідування, абстракція
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='object'>
-                            object
+                            <input type="radio" name="q7" value='Інкапсулція, наслідування, поліморфізм'>
+                            Інкапсулція, наслідування, поліморфізм
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='string'>
-                            string
+                            <input type="radio" name="q7" value='Насліування, спалкування, абстракція, інкапсулція'>
+                            Насліування, спалкування, абстракція, інкапсулція
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='char'>
-                            char
+                            <input type="radio" name="q7" value='Наслідування, абстракція, інкапсулція, поліморфізм'>
+                            Наслідування, абстракція, інкапсулція, поліморфізм
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q6" value='NULL'>
-                            NULL
+                            <input type="radio" name="q7" value='Їх дуже багато'>
+                            Їх дуже багато
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="q7" value='В PHP немає основних принципів ООП'>
+                            В PHP немає основних принципів ООП
                         </label>
                     </li>
                     <li>
                         <label>
-                            Який тип даних не дозволений в PHP?
+                            Ключові слова public, protected, private - це ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q7" value="string">
-                            string
+                            <input type="radio" name="q8" value="функції методів">
+                            функції методів
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q7" value='integer'>
-                            integer
+                            <input type="radio" name="q8" value='функції класів'>
+                            функції класів
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q7" value='float'>
-                            float
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q7" value='char'>
-                            char
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q7" value='array'>
-                            array
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q7" value='object'>
-                            object
+                            <input type="radio" name="q8" value='області видимості'>
+                            області видимості
                         </label>
                     </li>
                     <li>
                         <label>
-                            Виберіть омбіновані математичні оператори:
-                        </label>
-
-                        <label class="radio">
-                            <input type="radio" name="q8" value="+=, -=">
-                            +=, -=
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q8" value='=+, =-'>
-                            =+, =-
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q8" value='>=, =-'>
-                            >=, =-
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            Що робить постінкремент?
+                            Оголошення властивостей і методів класу статичними (static) дозволяє ...
                         </label>
 
                         <label class="radio">
                             <input type="radio" name="q9"
-                                   value="Повертає поточне значення, після чого збільшує його на одиницю">
-                            Повертає поточне значення, після чого збільшує його на одиницю
+                                   value="звертатися до них без створення екземпляра класу">
+                            звертатися до них без створення екземпляра класу
                         </label>
                         <label class="radio">
                             <input type="radio" name="q9"
                                    value='Зменшує значення на одиницю, потім повертає значення'>
-                            Зменшує значення на одиницю, потім повертає значення
+                            звертатися до них без символу $
                         </label>
                         <label class="radio">
                             <input type="radio" name="q9"
                                    value='Повертає поточне значення, після чого зменшує його на одиницю'>
-                            Повертає поточне значення, після чого зменшує його на одиницю
-                        </label>
-                        <label class="radio">
-                            <input type="radio" name="q9" value='Збільшує значення на одиницю, потім повертає значення'>
-                            Збільшує значення на одиницю, потім повертає значення
+                            звертатися до них з будь-якого місця коду
                         </label>
                     </li>
                     <li>
                         <label>
-                            Скільки основних математичних операторів в PHP?
+                            Магічний метод __invoke () викликається, коли ...
                         </label>
 
                         <label class="radio">
-                            <input type="radio" name="q10" value="4">
-                            4
+                            <input type="radio" name="q10" value="відбувається перевизначення типів">
+                            відбувається перевизначення типів
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q10" value='8'>
-                            8
+                            <input type="radio" name="q10" value='коли потрібно прибрати "сміття"'>
+                            коли потрібно прибрати "сміття"
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q10" value='2'>
-                            2
+                            <input type="radio" name="q10" value='відбувається перетворення класу в рядок'>
+                            відбувається перетворення класу в рядок
                         </label>
                         <label class="radio">
-                            <input type="radio" name="q10" value='24'>
-                            24
+                            <input type="radio" name="q10" value="об'єкт намагаються викликати як функцію">
+                            об'єкт намагаються викликати як функцію
                         </label>
                     </li>
                 </ol>
