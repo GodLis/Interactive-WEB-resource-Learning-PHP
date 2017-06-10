@@ -1284,6 +1284,17 @@ session_destroy();
                 var_dump(1 === 1); // integer === integer -> true<br>
                 ?>
             </code>
+
+            <div style="text-align: center">
+                <p class="text-info">
+                    Ви можете пройти коротке тестування по пройденному матеріалу за наступним посиланням:
+                </p>
+                <p>
+                    <a href="tutorialTestPart2.php">
+                        Перейди за мною :)
+                    </a>
+                </p>
+            </div>
         </div>
 
         <div class="row-fluid" style="text-align: center">

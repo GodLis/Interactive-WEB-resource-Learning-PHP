@@ -1015,6 +1015,17 @@ session_destroy();
                     )
                 </blockquote>
             </div>
+
+            <div style="text-align: center">
+                <p class="text-info">
+                    Ви можете пройти коротке тестування по пройденному матеріалу за наступним посиланням:
+                </p>
+                <p>
+                    <a href="tutorialTestPart3.php">
+                        Перейди за мною :)
+                    </a>
+                </p>
+            </div>
         </div>
 
 

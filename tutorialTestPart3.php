@@ -268,7 +268,7 @@ session_destroy();
                 <div class="row-fluid">
 
                     <div class="span6 btn btn-link">
-                        <a href="">
+                        <a href="oop.php">
                             <button type="button">
                                 <span class="glyphicon glyphicon-arrow-left"></span> Попередня сторінка
                             </button>

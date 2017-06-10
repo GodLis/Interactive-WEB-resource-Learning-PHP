@@ -104,7 +104,7 @@ session_destroy();
                 <div class="row-fluid">
 
                     <div class="span6 btn btn-link">
-                        <a href="begineertest.php">
+                        <a href="statements.php">
                             <button type="button">
                                 <span class="glyphicon glyphicon-arrow-left"></span> Попередня сторінка
                             </button>
@@ -112,7 +112,7 @@ session_destroy();
                     </div>
 
                     <div class="span6 btn btn-link">
-                        <a href="">
+                        <a href="conditionalStatements.php">
                             <button type="button" >
                                 Наступна сторінка<span class="glyphicon glyphicon-arrow-right"></span>
                             </button>
