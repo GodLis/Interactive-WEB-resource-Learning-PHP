@@ -302,7 +302,7 @@ session_destroy();
                             {<br>
                                 // константы, свойства, методы<br>
                             }
-</                      <code>
+                        </code>
                     </li>
                 </ul>
 
